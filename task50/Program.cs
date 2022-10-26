@@ -25,11 +25,11 @@ void PrintElement(int i, int j, int[,] array)
     else Console.WriteLine($"Искомый элемент -> {array[i, j]}");
 }
 
-int[,] CreateMatrixRndInt(int row, int colum, int min, int max)
+int[,] CreateMatrixRndInt(int rown, int colum, int min, int max)
 {
-    int[,] matrix = new int[row, colum];
+    int[,] matrix = new int[rown, colum];
     var rnd = new Random();
-    for (int i = 0; i < row; i++)
+    for (int i = 0; i < rown; i++)
     {
         for (int j = 0; j < colum; j++)
         {
